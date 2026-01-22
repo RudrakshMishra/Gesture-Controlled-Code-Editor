@@ -1,44 +1,47 @@
 gesture-controlled-code-editor/
 │
 ├── vision/
-│   ├── camera.py
-│   ├── hand_tracker.py
-│   ├── gesture_detector.py
-│   └── utils.py
+│   ├── camera.py              # Webcam stream handling
+│   ├── hand_tracker.py        # Hand landmark detection
+│   ├── gesture_detector.py   # Raw gesture detection logic
+│   ├── gesture_classifier.py # Gesture classification rules / models
+│   └── utils.py               # Vision utilities
 │
 ├── gesture_engine/
-│   ├── gesture_mapper.py
-│   ├── command_registry.py
-│   ├── state_manager.py
-│   └── config_loader.py
+│   ├── gesture_mapper.py      # Maps gestures to actions
+│   ├── command_registry.py    # Available editor commands
+│   ├── config_loader.py       # Loads gesture configs
+│   └── state_manager.py       # Gesture state handling
 │
 ├── backend/
-│   ├── server.py
-│   ├── websocket_handler.py
-│   └── api_routes.py
+│   ├── server.py              # Backend entry point
+│   ├── websocket_handler.py   # Real-time communication
+│   └── api_routes.py          # Optional REST endpoints
 │
 ├── editor_extension/
 │   ├── src/
-│   │   ├── extension.ts
-│   │   ├── commandHandler.ts
-│   │   └── socketClient.ts
+│   │   ├── extension.ts       # VS Code extension entry
+│   │   ├── commandHandler.ts  # Maps backend actions to VS Code commands
+│   │   └── socketClient.ts    # WebSocket client
 │   ├── package.json
 │   └── tsconfig.json
 │
 ├── config/
-│   ├── gestures.yaml
-│   └── commands.yaml
+│   ├── gestures.yaml          # Gesture definitions
+│   └── commands.yaml          # Editor command mappings
 │
 ├── experiments/
-│   └── latency_and_accuracy_logs/
+│   ├── latency_tests.md       # Performance evaluation
+│   └── accuracy_logs/         # Gesture accuracy logs
 │
 ├── demos/
-│   └── demo.gif
+│   ├── demo.gif               # Live demonstration
+│   └── screenshots/
 │
 ├── docs/
-│   ├── architecture.md
-│   ├── gesture_design.md
-│   └── roadmap.md
+│   ├── architecture.md        # Detailed system design
+│   ├── gesture_design.md      # Gesture design rationale
+│   └── roadmap.md             # Future plans
 │
 ├── requirements.txt
 ├── README.md
