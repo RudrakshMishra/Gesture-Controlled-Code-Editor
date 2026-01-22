@@ -1,0 +1,45 @@
+gesture-controlled-code-editor/
+│
+├── vision/
+│   ├── camera.py
+│   ├── hand_tracker.py
+│   ├── gesture_detector.py
+│   └── utils.py
+│
+├── gesture_engine/
+│   ├── gesture_mapper.py
+│   ├── command_registry.py
+│   ├── state_manager.py
+│   └── config_loader.py
+│
+├── backend/
+│   ├── server.py
+│   ├── websocket_handler.py
+│   └── api_routes.py
+│
+├── editor_extension/
+│   ├── src/
+│   │   ├── extension.ts
+│   │   ├── commandHandler.ts
+│   │   └── socketClient.ts
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── config/
+│   ├── gestures.yaml
+│   └── commands.yaml
+│
+├── experiments/
+│   └── latency_and_accuracy_logs/
+│
+├── demos/
+│   └── demo.gif
+│
+├── docs/
+│   ├── architecture.md
+│   ├── gesture_design.md
+│   └── roadmap.md
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
